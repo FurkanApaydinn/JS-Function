@@ -85,16 +85,16 @@
 // console.log(emekliliğekalansüre(1986, "Murat"));
 // console.log(emekliliğekalansüre(1992, "Furkan"));
 
-// function dünyanınyüzdesiyıl(popülasyon) {
-//   const declaration = (popülasyon / 7900) * 100;
-//   return declaration;
-// }
-// const türkiyeyüzde = dünyanınyüzdesiyıl(350000);
-// console.log(türkiyeyüzde);
-// const almanyayüzde = dünyanınyüzdesiyıl(700000);
-// console.log(almanyayüzde);
-// const amerikayüzde = dünyanınyüzdesiyıl(440000);
-// console.log(amerikayüzde);
+function dünyanınyüzdesiyıl(popülasyon) {
+  const declaration = (popülasyon / 7900) * 100;
+  return declaration;
+}
+const türkiyeyüzde = dünyanınyüzdesiyıl(350000);
+console.log(türkiyeyüzde);
+const almanyayüzde = dünyanınyüzdesiyıl(700000);
+console.log(almanyayüzde);
+const amerikayüzde = dünyanınyüzdesiyıl(440000);
+console.log(amerikayüzde);
 
 // const dünyanınyüzdesiyıl3 = (popülasyon) => (popülasyon / 7900) * 100;
 // const yüzde = dünyanınyüzdesiyıl3(8900000);
@@ -109,14 +109,36 @@
 
 //functions calling other functions
 
-function meyveleriparçala(meyve, adet) {
-  return meyve === "almalar" ? adet * 4 : adet * 3;
-}
+// function meyveleriparçala(meyve, adet) {
+//   return meyve === "almalar" ? adet * 4 : adet * 3;
+// }
 
-function meyveişleme(elmalar, portakallar) {
-  const elmaparçaları = meyveleriparçala("elmalar", elmalar);
-  const portakalparçaları = meyveleriparçala("Portakallar", portakallar);
-  const meyvesuyu = `${elmaparçaları} elma ve ${portakalparçaları} portakal`;
-  return meyvesuyu;
+// function meyveişleme(elmalar, portakallar) {
+//   const elmaparçaları = meyveleriparçala("elmalar", elmalar);
+//   const portakalparçaları = meyveleriparçala("Portakallar", portakallar);
+//   const meyvesuyu = `${elmaparçaları} elma ve ${portakalparçaları} portakal`;
+//   return meyvesuyu;
+// }
+// console.log(meyveişleme(2, 3));
+
+// const toplama = (a, b) => a + b;
+// const çıkarma = (a, b) => a - b;
+// const çarpma = (a, b) => a * b;
+// const bölme = (a, b) => a / b;
+
+// const hesapmakinası = function (sayı1, sayı2, işlem) {
+//   return işlem(sayı1, sayı2);
+// };
+// const ekle = hesapmakinası(10, 3, toplama);
+// const çıkar = hesapmakinası(10, 3, çıkarma);
+// console.log(`toplam ${ekle}`);
+// console.log(`toplam ${çıkar}`);
+
+function nüfusutanımla(ülke, nüfus) {
+  return `${ülke}'da ${nüfus} milyon insan var, ki bu dünyanın yaklaşık ${dünyanınyüzdesiyıl(
+    nüfus
+  )}sidir`;
 }
-console.log(meyveişleme(2, 3));
+console.log(nüfusutanımla("Türkiye", 8500000));
+console.log(nüfusutanımla("Almanya", 10000000));
+console.log(nüfusutanımla("İspanya", 120000000));
