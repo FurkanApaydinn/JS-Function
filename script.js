@@ -85,16 +85,16 @@
 // console.log(emekliliğekalansüre(1986, "Murat"));
 // console.log(emekliliğekalansüre(1992, "Furkan"));
 
-function dünyanınyüzdesiyıl(popülasyon) {
-  const declaration = (popülasyon / 7900) * 100;
-  return declaration;
-}
-const türkiyeyüzde = dünyanınyüzdesiyıl(350000);
-console.log(türkiyeyüzde);
-const almanyayüzde = dünyanınyüzdesiyıl(700000);
-console.log(almanyayüzde);
-const amerikayüzde = dünyanınyüzdesiyıl(440000);
-console.log(amerikayüzde);
+// function dünyanınyüzdesiyıl(popülasyon) {
+//   const declaration = (popülasyon / 7900) * 100;
+//   return declaration;
+// }
+// const türkiyeyüzde = dünyanınyüzdesiyıl(350000);
+// console.log(türkiyeyüzde);
+// const almanyayüzde = dünyanınyüzdesiyıl(700000);
+// console.log(almanyayüzde);
+// const amerikayüzde = dünyanınyüzdesiyıl(440000);
+// console.log(amerikayüzde);
 
 // const dünyanınyüzdesiyıl3 = (popülasyon) => (popülasyon / 7900) * 100;
 // const yüzde = dünyanınyüzdesiyıl3(8900000);
@@ -134,11 +134,25 @@ console.log(amerikayüzde);
 // console.log(`toplam ${ekle}`);
 // console.log(`toplam ${çıkar}`);
 
-function nüfusutanımla(ülke, nüfus) {
-  return `${ülke}'da ${nüfus} milyon insan var, ki bu dünyanın yaklaşık ${dünyanınyüzdesiyıl(
-    nüfus
-  )}sidir`;
-}
-console.log(nüfusutanımla("Türkiye", 8500000));
-console.log(nüfusutanımla("Almanya", 10000000));
-console.log(nüfusutanımla("İspanya", 120000000));
+// function nüfusutanımla(ülke, nüfus) {
+//   return `${ülke}'da ${nüfus} milyon insan var, ki bu dünyanın yaklaşık ${dünyanınyüzdesiyıl(
+//     nüfus
+//   )}sidir`;
+// }
+// console.log(nüfusutanımla("Türkiye", 8500000));
+// console.log(nüfusutanımla("Almanya", 10000000));
+// console.log(nüfusutanımla("İspanya", 120000000));
+
+// const hesapmakinası = function (a, b) {
+//   const toplam = a + b;
+//   return `${a}+${b}=${a + b}`;
+// };
+// const cevap = hesapmakinası(1, 3);
+// console.log(cevap);
+
+const hesapmakinası = function (a, b) {
+  const toplam = a + b;
+  return true;
+};
+const cevap = hesapmakinası(1, 3);
+console.log(cevap);
