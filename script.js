@@ -156,3 +156,39 @@ const hesapmakinası = function (a, b) {
 };
 const cevap = hesapmakinası(1, 3);
 console.log(cevap);
+
+const rabbit={color:"Beyaz",checkWatch(){
+  console.log(`${this.color} bir tavşan saatinin kontrol ediyor ve geciktimi diye bağırıyor.`);
+ 
+}
+};
+
+//challange
+rabbit.checkWatch();
+
+const spaceship={
+  name:"kayanyıldızı",launch(){
+    // alert(`Uzay gemisine hoş geldiniz. ${this.name}`)
+  }
+};
+spaceship.launch();
+
+//3 - Chart
+const cart={
+  contents:"",
+  addItem(item){
+    this.contents=item;
+  }
+};
+cart.addItem("telefon");
+console.log( "ürünler",cart.contents);
+
+const aile={isim:"furkan",soyisim:"Apaydın",boy:1.69,kilo:72, aileTanimlama(){
+  console.log(`${this.isim} Bey hoşgeldiniz. Boyunuz:${this.boy} ve kilonuz:${this.kilo}'kd dır'`)
+  
+  
+}
+};
+aile.aileTanimlama();
+
+
